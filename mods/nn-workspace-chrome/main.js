@@ -46,7 +46,7 @@ export default class WorkspaceChrome extends View {
     }
     return h_flex().size_full().bg(t.chrome).pl(collapsed ? 6 : 14).pr(10).gap(4).items_center().text_size(13.5)
       .when(window()?.platform === "macos" && !window()?.fullscreen && !collapsed, el => el.pl(76))
-      .when(!collapsed, el => el.child(h_flex().flex_1().gap(8).items_center().child(div().w(4).h(18).bg(t.accent)).child(h_flex().font_bold().text_color(t.accent).child("HERDR").child(div().loop("opacity", { from: 0.15, to: 1, period: 1600 }).child("_")))))
+      .when(!collapsed, el => el.child(h_flex().flex_1().gap(8).items_center().child(div().w(4).h(18).bg(t.accent)).child(h_flex().font_bold().text_color(t.accent).child("HERDR").child(div().child("_")))))
       .when(!collapsed, el => el.child(this.button("search", svg("mods/nn-workspace-chrome/search.svg").size(15), () => run("mod.open", { name: "nn-picker" }))))
       // On the macOS rail the traffic lights fill the row; the agents list's » unfolds it.
       .when(!(collapsed && window()?.platform === "macos"), el => el.child(this.button("sidebar-toggle", svg("mods/nn-workspace-chrome/sidebar.svg").size(15), toggleSidebar)));
