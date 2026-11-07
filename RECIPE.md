@@ -100,10 +100,10 @@ and ANSI colours `#1a1d27 #ff2a55 #00ff9f #ffd166 #3aa8ff #ff2a9d #00f0ff
   branch with no upstream, and Herdr's own `↑2 ↓1`.
 - **Clock**: `nn-workspace-status` shows the time, refreshed every 30 seconds.
 - **System stats**, macOS only: `RAM` and `CPU` every 15 seconds from
-  `memory_pressure`, `ps` and `sysctl`, and `NET` from one `ping` to `1.1.1.1`
+  `memory_pressure` and `top`, and `NET` from one `ping` to `1.1.1.1`
   every 60 seconds. A failed read hides the label.
 - **Neon Noir's signals**: a 3px notch on each space in its most urgent status,
-  for blocked, done or working, and a slow-blinking `_` in `HERDR_`.
+  for blocked, done or working, and a still `_` in `HERDR_`.
 - **Peek**: `openOverlay` with `kind: "window"` and a `column` layout of a
   `nn-peek` block above a `{ terminal }` block.
 - **Programs**: nothing new. The clones keep Herdr's use of `git`, `sh`, `hc`
