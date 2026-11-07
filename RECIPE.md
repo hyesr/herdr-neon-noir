@@ -1,9 +1,10 @@
 # Neon Noir
 
-The default Herdr window recoloured as a neon-noir HUD: near-black panels,
-soft cyan accents, rose signals, violet lines and neutral secondary text. Corners are
-square, labels are uppercase, and selection is a cyan bar. The structure
-stays the same as `main`, and the popups match too.
+A neon-noir HUD where every agent has signal bars: three bars that move while
+it works, pulse when it needs you and sit low when it's idle. Each space shows
+its most urgent status and any unsaved work, and a `SIGNAL` meter counts your
+agents. Near-black panels, soft cyan and rose, square corners and uppercase
+labels. The structure stays the same as `main`, and the popups match too.
 
 ![Neon Noir](preview.png)
 
