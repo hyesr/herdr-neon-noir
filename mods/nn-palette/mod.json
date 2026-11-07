@@ -1,0 +1,12 @@
+{
+  "place": "none",
+  "title": "Command palette",
+  "overlay": {
+    "kind": "popup",
+    "at": "top",
+    "offset": 24,
+    "width": 620,
+    "height": 0.85,
+    "frame": "none"
+  }
+}

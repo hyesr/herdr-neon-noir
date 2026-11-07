@@ -1,0 +1,10 @@
+{
+  "layout:neon-noir": {
+    "cmd-p": "mod.open:nn-picker",
+    "cmd-shift-p": "mod.open:nn-palette",
+    "cmd-,": "app.settings",
+    "cmd-w": "nn-tabs.close_tab",
+    "f2": "nn-tabs.rename_tab",
+    "shift-f2": "nn-tabs.rename_space"
+  }
+}

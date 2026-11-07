@@ -1,0 +1,223 @@
+{
+  "id": "root",
+  "cloned_from": {
+    "name": "main",
+    "version": "0.1.12"
+  },
+  "type": "row",
+  "children": [
+    {
+      "id": "sidebar",
+      "type": "column",
+      "children": [
+        {
+          "id": "brand",
+          "type": "block",
+          "content": {
+            "mod": "nn-workspace-chrome"
+          },
+          "size": {
+            "px": 46
+          },
+          "window_drag": true
+        },
+        {
+          "id": "sidebar-lists",
+          "type": "column",
+          "children": [
+            {
+              "id": "spaces",
+              "type": "block",
+              "content": {
+                "mod": "nn-spaces"
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 90
+            },
+            {
+              "id": "agents",
+              "type": "block",
+              "content": {
+                "mod": "nn-agents"
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 90
+            }
+          ]
+        },
+        {
+          "id": "sidebar-footer",
+          "type": "block",
+          "content": {
+            "mod": "nn-workspace-chrome",
+            "props": {
+              "footer": true
+            }
+          },
+          "size": {
+            "px": 69
+          }
+        }
+      ],
+      "size": {
+        "px": 268
+      },
+      "min": 44,
+      "max": 480,
+      "background": "chrome",
+      "resizable": false
+    },
+    {
+      "id": "work",
+      "type": "column",
+      "children": [
+        {
+          "id": "tabs",
+          "type": "block",
+          "content": {
+            "mod": "nn-tabs"
+          },
+          "size": {
+            "px": 42
+          },
+          "window_drag": true
+        },
+        {
+          "id": "work-body",
+          "type": "row",
+          "children": [
+            {
+              "id": "main",
+              "type": "block",
+              "content": {
+                "tab": "active",
+                "pane": {
+                  "header": {
+                    "content": {
+                      "mod": "nn-pane"
+                    },
+                    "reveal": "always",
+                    "height": 30,
+                    "position": "top"
+                  },
+                  "background": "background",
+                  "border": {
+                    "width": 1,
+                    "color": "#3f2a63"
+                  },
+                  "focus": {
+                    "width": 2,
+                    "color": "#4fd1dc"
+                  },
+                  "radius": 0,
+                  "gap": 6,
+                  "lone": true
+                }
+              }
+            },
+            {
+              "id": "panel",
+              "type": "column",
+              "children": [
+                {
+                  "id": "panel-body",
+                  "type": "stack",
+                  "children": [
+                    {
+                      "id": "files",
+                      "type": "block",
+                      "content": {
+                        "mod": "nn-files"
+                      }
+                    },
+                    {
+                      "id": "changes",
+                      "type": "block",
+                      "content": {
+                        "mod": "nn-changes"
+                      }
+                    }
+                  ],
+                  "active": "files"
+                }
+              ],
+              "size": {
+                "px": 368
+              },
+              "min": 280,
+              "max": 900,
+              "hidden": true
+            }
+          ],
+          "padding": 8,
+          "gap": 8
+        },
+        {
+          "id": "status",
+          "type": "block",
+          "content": {
+            "mod": "nn-workspace-status"
+          },
+          "size": {
+            "px": 28
+          }
+        }
+      ],
+      "resizable": false
+    }
+  ],
+  "background": {
+    "gradient": [
+      "#16102a",
+      "#05090f"
+    ],
+    "angle": 160
+  },
+  "theme": "neon-noir",
+  "preview": "layouts/neon-noir.svg",
+  "colors": {
+    "accent": "#4fd1dc",
+    "background": "#0c0d13",
+    "blocked": "#f0566e",
+    "border": "#3f2a63",
+    "canvas": "#08080d",
+    "chrome": "#0b0a11",
+    "dim": "#6b7f88",
+    "done": "#4fd6a0",
+    "foreground": "#d9e2e6",
+    "hover": "#4fd1dc14",
+    "idle": "#6b7f88",
+    "input": "#3f2a63",
+    "muted": "#9fb3bb",
+    "popover": "#0b0a11",
+    "raised": "#181522",
+    "selected": "#102a2e",
+    "selection": "#3a1250",
+    "solid": "#4fd1dc",
+    "solid_foreground": "#0c0d13",
+    "surface": "#101018",
+    "terminal_foreground": "#d9e2e6",
+    "working": "#e0609f",
+    "accent_foreground": "#0c0d13"
+  },
+  "font": "JetBrains Mono",
+  "ui_font": "Geist Mono",
+  "terminal_padding": [
+    14,
+    12
+  ],
+  "divider": {
+    "width": 1,
+    "color": "#6a3a78"
+  },
+  "titlebar": "none",
+  "traffic_lights": [
+    12,
+    16
+  ],
+  "terminal_menu": "nn-menu"
+}
