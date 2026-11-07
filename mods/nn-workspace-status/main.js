@@ -77,7 +77,7 @@ export default class WorkspaceStatus extends View {
         .child("·")
         .child(div().when(this.stats?.cpu >= 85, s => s.text_color(t.working)).child(`CPU ${this.stats?.cpu}%`))))
       .when(this.online === true || this.online === false, el => el.child(h_flex().flex_none().gap(5).items_center().text_color(t.dim)
-        .child("NET").child(div().size(6).bg(this.online ? t.done : t.blocked))))
+        .child("NET").child(div().size(7).rounded(4).bg(this.online ? t.done : t.blocked))))
       .child(div().flex_none().text_color(t.muted).child(`${pad(clock.getHours())}:${pad(clock.getMinutes())}`))
       .child(div().id("palette").text_color(t.dim).on_click(() => run("mod.open", { name: "nn-palette" })).child(this.hint(t)));
   }
