@@ -14,14 +14,14 @@ export default class WorkspaceStatus extends View {
     cx.timer.every(60000, (cx) => this.readNet(cx));
   }
 
-  // Memory in use and CPU across all cores. A failed read hides the label.
+  // Memory in use and CPU as top reports it. A failed read hides the label.
   readStats(cx) {
     cx.spawn(async (cx) => {
       try {
-        const r = await exec("sh", ["-c", "memory_pressure -Q | tail -1; ps -A -o %cpu= | awk '{s+=$1} END {print s}'; sysctl -n hw.ncpu"]);
-        const [memory, used, cores] = r.stdout.trim().split("\n");
+        const r = await exec("sh", ["-c", "memory_pressure -Q | tail -1; top -l 2 -n 0 | grep 'CPU usage' | tail -1"]);
+        const [memory, usage] = r.stdout.trim().split("\n");
         const free = parseInt(memory.match(/(\d+)%/)?.[1], 10);
-        const cpu = Math.round(parseFloat(used) / parseInt(cores, 10));
+        const cpu = Math.round(100 - parseFloat(usage?.match(/([\d.]+)% idle/)?.[1]));
         this.stats = r.code === 0 && Number.isFinite(free) && Number.isFinite(cpu) ? { ram: 100 - free, cpu } : null;
       } catch {
         this.stats = null;
