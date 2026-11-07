@@ -106,8 +106,9 @@ and ANSI colours `#1a1d27 #ff2a55 #00ff9f #ffd166 #3aa8ff #ff2a9d #00f0ff
   for blocked, done or working, and a still `_` in `HERDR_`.
 - **Peek**: `openOverlay` with `kind: "window"` and a `column` layout of a
   `nn-peek` block above a `{ terminal }` block.
-- **Programs**: nothing new. The clones keep Herdr's use of `git`, `sh`, `hc`
-  and the other programs its mods run. Icons are Lucide and Feather, shipped
+- **Programs**: the clones keep Herdr's use of `git`, `sh`, `hc` and the other
+  programs its mods run. On macOS the system stats add `memory_pressure`, `top`
+  and `ping`. Icons are Lucide and Feather, shipped
   with Herdr.
 - **Install order**: copy `themes/neon-noir.json` as well as the layout and
   mods, and merge the keys section into `keys.json`, asking before replacing

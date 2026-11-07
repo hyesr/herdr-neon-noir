@@ -31,8 +31,8 @@ These files are derived from Herdr app 0.1.13 and were changed in November
 | `mods/nn-prompt` | `prompt` | Used for rename prompts |
 | `mods/nn-spaces` | `spaces` | Opens `nn-menu`; adds status notches, changed-file and upstream labels, and a 30-second git refresh |
 | `mods/nn-tabs` | `tabs` | Opens the `nn-` menus and dialogs; handles this layout's keys; shows `CH.01` for automatic tab numbers |
-| `mods/nn-workspace-chrome` | `workspace-chrome` | Logo replaced by a text mark with a blinking cursor; opens the `nn-` screens |
-| `mods/nn-workspace-status` | `workspace-status` | Opens `nn-palette`; adds `NODE:LOCAL`, the `SIGNAL` meter and a clock |
+| `mods/nn-workspace-chrome` | `workspace-chrome` | Logo replaced by a text mark with a still cursor; opens the `nn-` screens |
+| `mods/nn-workspace-status` | `workspace-status` | Opens `nn-palette`; adds `NODE:LOCAL`, the `SIGNAL` meter, a clock, and on macOS `RAM`, `CPU` and `NET` |
 | `mods/nn-worktree` | `worktree` | Styling only |
 
 ## New files

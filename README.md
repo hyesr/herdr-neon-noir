@@ -14,7 +14,8 @@ agents and unsaved work on every space.
 - **Unsaved work:** `3●` for changed files, `↑?` for a branch with no upstream,
   and `↑2` for commits to push.
 - **`SIGNAL` meter:** five ticks in the status bar, one per agent, with the
-  working count and a clock.
+  working count and a clock. On macOS it also shows `RAM`, `CPU` and `NET`
+  (online or not).
 - **A matching window:** square popups with corner marks, numbered sections and
   a soft cyan and rose palette that's easy on the eyes.
 
