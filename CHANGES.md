@@ -18,7 +18,7 @@ These files are derived from Herdr app 0.1.13 and were changed in November
 |---|---|---|
 | `layouts/neon-noir.json` | `main` layout | New colours, fonts and pane style; uses the `nn-` mods |
 | `mods/nn-agents` | `agents` | Peek opens a custom window instead of `terminal.peek` |
-| `mods/nn-changes` | `changes` | Cyan commit button |
+| `mods/nn-changes` | `changes` | Cyan commit button; file list layout from Herdr 0.1.14 (fills the panel, scrolls to every file) |
 | `mods/nn-confirm` | `confirm` | Used for close prompts |
 | `mods/nn-files` | `files` | Styling only |
 | `mods/nn-machine-add` | `machine-add` | Styling only |
@@ -33,7 +33,7 @@ These files are derived from Herdr app 0.1.13 and were changed in November
 | `mods/nn-tabs` | `tabs` | Opens the `nn-` menus and dialogs; handles this layout's keys; shows `CH.01` for automatic tab numbers |
 | `mods/nn-workspace-chrome` | `workspace-chrome` | Logo replaced by a text mark with a still cursor; opens the `nn-` screens |
 | `mods/nn-workspace-status` | `workspace-status` | Opens `nn-palette`; adds `NODE:LOCAL`, the `SIGNAL` meter, a clock, and on macOS `RAM`, `CPU` and `NET` |
-| `mods/nn-worktree` | `worktree` | Styling only |
+| `mods/nn-worktree` | `worktree` | Styling; `git add` and `remove` use the 10-minute `exec` timeout from Herdr 0.1.14 |
 
 ## New files
 
